@@ -10,6 +10,6 @@
 
 # Preview
 
-- [DEMO LINK](https://oleh-khashchevskyi.github.io/)
+- [DEMO LINK](https://oleh-khashchevskyi.github.io/todogit s)
 
 <!-- ![todoapp](./description/todoapp.gif) -->
