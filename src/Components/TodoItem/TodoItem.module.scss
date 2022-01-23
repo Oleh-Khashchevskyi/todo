@@ -1,0 +1,71 @@
+.todoItem {
+  padding: 20px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+
+  &:hover .delete {
+    opacity: 1;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #d9d9d9;
+}
+
+.checkbox {
+  & input {
+    appearance: none;
+    display: none;
+  }
+
+  & input:checked ~ .toggle {
+    border-color: #BDDAD5;
+   
+    &::before {
+      content: '✓';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #5DC2AF;
+      font-size: 18px;
+    }
+  }
+}
+
+.toggle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.delete {
+  background: none;
+  outline: none;
+  border: none;
+  color: #cc9a9a;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s, opacity 0.3s;
+  opacity: 0;
+
+  &:hover {
+    color: #af5b5e;
+  }
+}

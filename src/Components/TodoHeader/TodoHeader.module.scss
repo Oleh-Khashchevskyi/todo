@@ -1,0 +1,54 @@
+.header {
+  height: 65px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background: rgba(0,0,0,.01);
+  box-shadow: inset 0 -2px 1px rgb(0 0 0 / 3%);
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.toggleAll {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  & input {
+    appearance: none;
+    display: none;
+  }
+
+  & input:checked ~ .icon {
+    color: #4d4d4d;
+  }
+}
+
+.icon {
+  transform: rotate(90deg);
+  font-size: 22px;
+  color: #d9d9d9;
+  transition: color 0.3s;
+
+  &::selection {
+    background: none;
+  }
+}
+
+.newTodo {
+  width: 485px;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+
+  &::placeholder {
+    font-style: italic;
+    color: #d9d9d9;
+    font-weight: 500;
+  }
+}
