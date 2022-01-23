@@ -12,4 +12,4 @@
 
 - [DEMO LINK](https://oleh-khashchevskyi.github.io/todo)
 
-![todoapp](./todoapp.gif)
+![todoapp](./preview.gif)
